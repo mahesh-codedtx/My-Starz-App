@@ -1,0 +1,46 @@
+.my-button {
+  color: black;
+  font-size: 16px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #d2ff00, #d2ff00);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 24px;
+}
+@media screen and (min-width: 576px) {
+  .my-button {
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .my-button {
+    max-width: 320px;
+  }
+}
+
+.my-button:active,
+.my-button:focus,
+.my-button:hover {
+  background: linear-gradient(90deg, #d2ff00 0, #d6fbf0 85%, #a6feff);
+  border: none;
+  outline: none;
+}
+
+.padding-thin {
+  padding: 7px 24px;
+}
+.padding-thick {
+  padding: 15px 10px;
+}

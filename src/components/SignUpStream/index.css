@@ -1,0 +1,38 @@
+.mobile-os-icons {
+  width: 40px;
+  height: 40px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.heading {
+  font-size: 36px;
+  margin: 0px 0px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 2.25px;
+}
+.sub-heading {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+.desc {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.grey-color {
+  color: #d1d3d4;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

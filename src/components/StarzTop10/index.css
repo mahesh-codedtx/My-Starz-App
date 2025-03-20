@@ -1,0 +1,48 @@
+.starz-parent-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
+  margin-top: 30px;
+}
+.starz-container {
+  display: flex;
+  gap: 10px;
+  width: 65%;
+  height: 80%;
+  margin: auto;
+}
+.main-heading {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 44px;
+  letter-spacing: 2.25px;
+  font-weight: 400;
+  padding-left: 20%;
+  margin: 25px 0px;
+}
+.starz-top-image-container {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 5px 0px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.starz-top-image-container::-webkit-scrollbar {
+  display: none;
+}
+.image-with-index {
+  display: flex;
+  align-items: center;
+}
+.index-num {
+  font-size: 300px;
+  font-weight: 700;
+  background: white;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px #1f6370, -1px -1px 2px #89c7d3, 1px -1px 2px #89c7d3,
+    -1px 1px 2px #89c7d3;
+}

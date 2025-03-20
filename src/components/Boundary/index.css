@@ -1,0 +1,50 @@
+.boundary-image-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: visible;
+}
+.boundary-image-container::-webkit-scrollbar {
+  display: none;
+}
+
+.boundary-main-heading {
+  font-size: 2.25rem;
+  line-height: 44px;
+  letter-spacing: 2.25px;
+  font-weight: 400;
+  margin: 0px 0px;
+}
+.boundary-sub-heading {
+  font-size: 1.5rem;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #d1d2d3;
+}
+.bbo-movie-title {
+  font-size: 1.125rem;
+  line-height: 26px;
+  letter-spacing: 1.125px;
+  font-weight: 400;
+}
+.bbo-movie-desc {
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.boundary-single-image-hover:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+  position: relative;
+  z-index: 10;
+}
+.movie-desc-on-hover {
+  display: block;
+}
+.boundary-single-image-hover:hover .movie-desc-on-hover {
+  display: none;
+}

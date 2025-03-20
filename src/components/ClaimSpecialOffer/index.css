@@ -1,0 +1,21 @@
+.background-container {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 120, 139, 0.3),
+      rgba(2, 18, 20, 0.7)
+    ),
+    url(https://starz.imgix.net/BuyStarz/v3/generic/footer-desktop-092424.jpg?&auto=compress,format);
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 36px;
+}
+.desc {
+  font-size: 24px;
+  color: #d1d2d3;
+}

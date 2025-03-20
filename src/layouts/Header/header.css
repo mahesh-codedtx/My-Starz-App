@@ -1,0 +1,42 @@
+.header-container {
+  z-index: 99;
+  width: 98%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: 14px 20px 14px 20px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-image: linear-gradient(
+    0deg,
+    rgba(8, 33, 37, 0) 1%,
+    rgba(8, 33, 37, 0.85) 99%
+  );
+}
+.header-list {
+  list-style-type: none;
+  display: flex;
+  text-transform: uppercase;
+  gap: 24px;
+}
+.header-list li {
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.cursor {
+  cursor: pointer;
+}
