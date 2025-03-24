@@ -5,7 +5,9 @@ import insta from "../../assets/icons/instagram-brands.svg";
 import youtube from "../../assets/icons/youtube-brands.svg";
 import tiktok from "../../assets/icons/tiktok-brands.svg";
 import { footerContent } from "../../utils/footer";
+import { useNavigate } from "react-router-dom";
 const MyFooter = () => {
+  const navigate = useNavigate();
   return (
     <section className="footer-parent-container">
       <div style={{ width: "70%", margin: "auto" }}>
@@ -14,7 +16,7 @@ const MyFooter = () => {
             return (
               <div>
                 {data.title === "" ? (
-                  <h6 style={{ visibility: "hidden" }}>'</h6>
+                  <h6 className="footer-part-title">'</h6>
                 ) : (
                   <h3 style={{ visibility: "visible" }}>{data.title}</h3>
                 )}
@@ -41,8 +43,14 @@ const MyFooter = () => {
 
         <div className="hr-line"></div>
         <div className="footer-logo">
-          <img src={logo} width="130px" className="cursor" />
-          <p style={{ fontSize: "10px" }}>&copy; 2025 STARZ</p>
+          <img
+            src={logo}
+            className="cursor footer-logo-img"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
+          <p className="footer-copyright">&copy; 2025 STARZ</p>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Averta, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,13 +30,22 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Averta, Helvetica Neue, Helvetica, Arial, sans-serif, Comic Neue;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Averta, Helvetica Neue, Helvetica, Arial, sans-serif, Comic Neue;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -42,17 +53,17 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -65,4 +76,32 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* Scrollbar for WebKit browsers (Safari, Chrome, Edge) */
+::-webkit-scrollbar {
+  width: 3px; /* Thin scrollbar */
+  height: 8px; /* Horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* No background like Safari */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent dark thumb */
+  border-radius: 10px; /* Rounded edges */
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6); /* Slightly darker on hover */
+}
+
+* {
+  font-family: Averta, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+@font-face {
+  font-family: "Averta";
+  src: url("assets/fonts/AvertaDemoPE-Regular.otf") format("opentype");
 }

@@ -8,7 +8,7 @@ import WebCoupleDoor from "../../assets/images/Home/couple-next-door-web.avif";
 
 const SignStream = () => {
   return (
-    <section style={{ marginTop: "40px" }}>
+    <section style={{ marginTop: "40px" }} className="sign-stream-container">
       <div>
         <h5 className="heading">{signStream.heading}</h5>
         <p className="grey-color sub-heading">{signStream.subHeading}</p>

@@ -8,8 +8,8 @@ import { starzTop10 } from "../../utils/Home/StarzTop";
 
 const StarzTop = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const [isAtStart, setIsAtStart] = useState(true); 
-  const [isAtEnd, setIsAtEnd] = useState(false); 
+  const [isAtStart, setIsAtStart] = useState(true);
+  const [isAtEnd, setIsAtEnd] = useState(false);
 
   const imagesPerPage = 4;
   const totalImages = starzTop10.length;
@@ -18,7 +18,7 @@ const StarzTop = () => {
     if (containerRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
 
-      setIsAtStart(scrollLeft === 0); 
+      setIsAtStart(scrollLeft === 0);
       setIsAtEnd(scrollLeft + clientWidth >= scrollWidth);
     }
   };
@@ -63,7 +63,7 @@ const StarzTop = () => {
           className="icon-style"
           onClick={handlePrev}
           alt="Previous"
-          style={{ visibility: isAtStart ? "hidden" : "visible" }} 
+          style={{ visibility: isAtStart ? "hidden" : "visible" }}
         />
         <div
           className="starz-top-image-container"
@@ -81,7 +81,8 @@ const StarzTop = () => {
                 <ImageHover
                   img={data.img}
                   hoverText={data.hoverText}
-                  imageHeight={""}
+                  imageHeight={"270px"}
+                  imageWidth={""}
                 />
               </div>
             );
@@ -92,7 +93,7 @@ const StarzTop = () => {
           className="icon-style"
           onClick={handleNext}
           alt="Next"
-          style={{ visibility: isAtEnd ? "hidden" : "visible" }} 
+          style={{ visibility: isAtEnd ? "hidden" : "visible" }}
         />
       </div>
     </section>

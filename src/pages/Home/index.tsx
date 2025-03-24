@@ -4,6 +4,7 @@ import HeroCarousel from "../../components/HeroCarousel";
 import ComingSoon from "../../components/CominSoon";
 import StarzTop from "../../components/StarzTop10";
 import Boundary from "../../components/Boundary";
+import { boldOriginals } from "../../utils/Home/claimOfferBold";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <StarzTop />
       <ComingSoon />
       <SignStream />
-      <ClaimSpecialOffer />
+      <ClaimSpecialOffer props={boldOriginals} />
     </main>
   );
 };

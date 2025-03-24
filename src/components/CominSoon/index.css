@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-top: 50px;
 }
 .main-heading {
   font-size: 36px;
@@ -9,15 +10,22 @@
   line-height: 44px;
   letter-spacing: 2.25px;
   font-weight: 400;
-  padding-left: 20%;
-  margin: 25px 0px;
 }
-
+@media screen and (max-width: 1200px) {
+  .main-heading {
+    padding-left: 7%;
+  }
+}
 .coming-container {
   display: flex;
   gap: 10px;
-  width: 65%;
+  width: 85%;
   margin: auto;
+}
+@media screen and (max-width: 1200px) {
+  .coming-container {
+    width: 95%;
+  }
 }
 .coming-image-container {
   height: auto;
@@ -26,17 +34,17 @@
   padding: 5px 0px;
   display: flex;
   gap: 10px;
-  overflow-x: auto; 
-  scroll-snap-type: x mandatory; 
-  scrollbar-width: none; 
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 .coming-image-container::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 .coming-image-container img {
-  width: 200px; 
-  height: auto; 
-  scroll-snap-align: start; 
+  width: 200px;
+  height: auto;
+  scroll-snap-align: start;
 }
 .icon-style {
   width: 20px;

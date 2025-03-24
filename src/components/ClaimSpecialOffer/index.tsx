@@ -1,13 +1,29 @@
 import "./index.css";
 import MyButton from "../Button";
-import { boldOriginals } from "../../utils/Home/claimOfferBold";
+import { IClaimSpecialOffer } from "../../utils/Home/claimOfferBold";
 
-const ClaimSpecialOffer = () => {
+const ClaimSpecialOffer = ({ props }: { props: IClaimSpecialOffer }) => {
+  const backgroundImageStyle = {
+    backgroundImage: `linear-gradient(
+      to right,
+      rgba(0, 120, 139, 0.3),
+      rgba(2, 18, 20, 0.7)
+    ), url(${props.bgImage})`,
+    backgroundSize: "cover",
+    minHeight: `${props.bgImageHeight}`,
+    backgroundRepeat: "no-repeat",
+    display: "flex",
+    justifyContent: " center",
+    alignItems: "center",
+    Position: "relative",
+    padding: "0px 15px",
+  };
+
   return (
-    <section className="background-container">
+    <section style={backgroundImageStyle} className="claim-special-offer-bg">
       <div>
-        <h3 className="heading">{boldOriginals.heading}</h3>
-        <p className="desc">{boldOriginals.description}</p>
+        <h3 className="heading">{props.heading}</h3>
+        <h4 className="desc">{props.description}</h4>
         <MyButton btnText={"CLAIM SPECIAL OFFER"} padding={"thick"} />
       </div>
     </section>
