@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+.main-background {
+  background: #000
+    url(https://static-web-images.imgix.net/web-images/common/background-no-image-1440.jpg?auto=compress,format)
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("assets/fonts/AvertaDemoPE-Regular.otf") format("opentype");
+}
