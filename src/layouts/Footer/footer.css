@@ -23,6 +23,11 @@
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: flex-start;
+    text-align: center;
+  }
+  .visible-footer-heading {
+    position: relative;
+    left: 110%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -118,6 +123,9 @@
 }
 .footer-part-title {
   visibility: hidden;
+}
+.visible-footer-heading {
+  visibility: visible;
 }
 @media screen and (max-width: 767px) {
   .footer-part-title {

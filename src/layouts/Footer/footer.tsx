@@ -18,7 +18,12 @@ const MyFooter = () => {
                 {data.title === "" ? (
                   <h6 className="footer-part-title">'</h6>
                 ) : (
-                  <h3 style={{ visibility: "visible" }}>{data.title}</h3>
+                  <h3
+                    style={{ visibility: "visible" }}
+                    className="visible-footer-heading"
+                  >
+                    {data.title}
+                  </h3>
                 )}
                 <div>
                   {data.subTitle.map((submovie, index) => {

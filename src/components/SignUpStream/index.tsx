@@ -10,7 +10,7 @@ const SignStream = () => {
   return (
     <section style={{ marginTop: "40px" }} className="sign-stream-container">
       <div>
-        <h5 className="heading">{signStream.heading}</h5>
+        <h5 className="sign-stream-heading">{signStream.heading}</h5>
         <p className="grey-color sub-heading">{signStream.subHeading}</p>
       </div>
       <div className="bottom-section">

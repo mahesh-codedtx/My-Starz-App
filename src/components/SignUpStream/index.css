@@ -12,7 +12,7 @@
   justify-content: center;
   gap: 25px;
 }
-.heading {
+.sign-stream-heading {
   font-size: 36px;
   margin: 0px 0px;
   font-weight: 400;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .heading {
+  .sign-stream-heading {
     font-size: 1.875rem;
     line-height: 38px;
     letter-spacing: 1.875px;
