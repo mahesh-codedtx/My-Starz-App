@@ -25,9 +25,7 @@
     align-items: flex-start;
     text-align: center;
   }
-  .visible-footer-heading {
-    position: relative;
-    left: 110%;
+  .visible-footer-heading:first-child {
   }
 }
 @media screen and (max-width: 767px) {

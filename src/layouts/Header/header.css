@@ -49,3 +49,69 @@
 .cursor {
   cursor: pointer;
 }
+@media screen and (max-width: 1269px) {
+  .header-list {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .header-container {
+    padding: 20px;
+  }
+  .header-menu-icon {
+    display: block;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1270px) {
+  .header-menu-icon {
+    display: none;
+  }
+}
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 10px; /* Positioned to the right */
+  z-index: 1000;
+  transition: right 0.3s;
+}
+
+/* Move the menu icon along with the side nav */
+.menu-icon.icon-move {
+  right: 260px; /* Adjust this value based on the width of your side nav */
+}
+
+/* Side navigation styling */
+.side-nav {
+  height: 100%;
+  width: 250px; /* Set width of the side nav */
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  background-color: #111;
+  overflow-x: hidden;
+  transition: right 0.3s;
+  padding-top: 60px;
+}
+
+.side-nav.open {
+  right: 0; /* Slide into view */
+}
+
+.side-nav a {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  background-color: #575757;
+}

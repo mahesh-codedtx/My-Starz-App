@@ -49,3 +49,12 @@
 .icon-style {
   width: 20px;
 }
+@media screen and (max-width: 767px) {
+  .coming-parent-container {
+    text-align: center;
+  }
+  .testing-class {
+    width: 180px !important;
+    height: 220px !important;
+  }
+}

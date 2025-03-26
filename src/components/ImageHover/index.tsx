@@ -4,6 +4,7 @@ interface IImageHover {
   hoverText: string;
   imageHeight: string;
   imageWidth: string;
+  imgClassName: string;
 }
 const ImageHover = (data: IImageHover) => {
   return (
@@ -15,6 +16,7 @@ const ImageHover = (data: IImageHover) => {
           height: data.imageHeight,
           width: data.imageWidth,
         }}
+        className={data.imgClassName}
       />
       <div className="hover-opacity" style={{ height: data.imageHeight }}></div>
       <div className="hovered-text" style={{ height: data.imageHeight }}>
