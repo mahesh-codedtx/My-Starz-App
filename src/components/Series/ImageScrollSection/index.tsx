@@ -99,6 +99,7 @@ const ImageScrollContainer = ({ props }: { props: IImageScrollSection }) => {
                   hoverText={data.hoverText}
                   imageHeight={props.imageHeight || "200px"}
                   imageWidth={props.imageWidth || "300px"}
+                  imgClassName={""}
                 />
               </div>
             );

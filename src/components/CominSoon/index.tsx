@@ -74,8 +74,9 @@ const ComingSoon = () => {
               key={index}
               img={data.img}
               hoverText={data.hoverText}
-              imageHeight=""
+              imageHeight="100%"
               imageWidth={""}
+              imgClassName={"testing-class"}
             />
           ))}
         </div>

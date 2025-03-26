@@ -50,9 +50,10 @@
 .image-with-index {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 .index-num {
-  font-size: 300px;
+  font-size: 260px;
   line-height: normal;
   font-weight: bold;
   color: rgb(19, 80, 90);
@@ -60,4 +61,15 @@
   text-shadow: 0 0 4px #1cb4d8, 0 0 8px rgba(28, 180, 216, 0.7),
     0 0 12px rgba(28, 180, 216, 0.5);
   font-family: Arial, sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .starz-parent-container {
+    text-align: center;
+  }
+  .index-num {
+    font-size: 200px;
+  }
+  .icon-style {
+    display: none;
+  }
 }

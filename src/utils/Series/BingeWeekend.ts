@@ -17,42 +17,52 @@ export const bingeWeekend: IImageScrollSection = {
     {
       img: series10,
       hoverText: "",
+      id: 0,
     },
     {
       img: series9,
       hoverText: "",
+      id: 0,
     },
     {
       img: series8,
       hoverText: "",
+      id: 0,
     },
     {
       img: series7,
       hoverText: "",
+      id: 0,
     },
     {
       img: series6,
       hoverText: "",
+      id: 0,
     },
     {
       img: series5,
       hoverText: "",
+      id: 0,
     },
     {
       img: series4,
       hoverText: "",
+      id: 0,
     },
     {
       img: series3,
       hoverText: "",
+      id: 0,
     },
     {
       img: series2,
       hoverText: "",
+      id: 0,
     },
     {
       img: series1,
       hoverText: "",
+      id: 0,
     },
   ],
   isImageWithIndex: false,

@@ -81,8 +81,9 @@ const StarzTop = () => {
                 <ImageHover
                   img={data.img}
                   hoverText={data.hoverText}
-                  imageHeight={"270px"}
+                  imageHeight={"200px"}
                   imageWidth={""}
+                  imgClassName={""}
                 />
               </div>
             );
