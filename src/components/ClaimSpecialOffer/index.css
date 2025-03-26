@@ -9,12 +9,15 @@
   letter-spacing: 2.25px;
   font-weight: 400;
 }
+.text-capitalize {
+  text-transform: capitalize;
+}
 @media screen and (max-width: 768px) {
   .heading {
-    font-size: 1.875rem;
-    line-height: 38px;
-    letter-spacing: 1.875px;
-    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
   }
 }
 
@@ -23,6 +26,7 @@
   line-height: 32px;
   letter-spacing: 1.5px;
   font-weight: 400;
+  color: #d1d3d4;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,5 +35,10 @@
     line-height: 38px;
     letter-spacing: 1.875px;
     font-weight: 400;
+  }
+}
+@media screen and (max-width: 575px) {
+  .claim-special-offer-container {
+    padding: 40px 16px;
   }
 }

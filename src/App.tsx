@@ -3,7 +3,6 @@ import "./App.css";
 import Home from "./pages/Home";
 import Series from "./pages/Series";
 import Movies from "./pages/Movies";
-import Header from "./layouts/Header/header";
 import MovieDetailPage from "./pages/MovieDetailPage";
 
 function App() {

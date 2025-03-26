@@ -21,8 +21,8 @@ const ClaimSpecialOffer = ({ props }: { props: IClaimSpecialOffer }) => {
 
   return (
     <section style={backgroundImageStyle} className="claim-special-offer-bg">
-      <div>
-        <h3 className="heading">{props.heading}</h3>
+      <div className="claim-special-offer-container">
+        <h3 className="heading text-capitalize">{props.heading}</h3>
         <h4 className="desc">{props.description}</h4>
         <MyButton btnText={"CLAIM SPECIAL OFFER"} padding={"thick"} />
       </div>

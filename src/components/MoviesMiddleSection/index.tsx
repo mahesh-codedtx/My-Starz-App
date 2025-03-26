@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import { CiPlay1 } from "react-icons/ci";
 import { ImVideoCamera } from "react-icons/im";

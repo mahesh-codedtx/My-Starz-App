@@ -4,7 +4,7 @@ import prev from "../../../assets/icons/chevron-left-solid.svg";
 import next from "../../../assets/icons/chevron-right-solid.svg";
 import { IImageScrollSection } from "../../../utils/Series/originalsExclusives";
 import { useEffect, useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const ImageScrollContainer = ({ props }: { props: IImageScrollSection }) => {
   const navigate = useNavigate();
 

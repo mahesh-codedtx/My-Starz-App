@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 import { useParams } from "react-router-dom";
 import { movieDetails } from "../../utils/Movies/MovieDetail";
@@ -27,7 +26,7 @@ const MovieDetailScreen = () => {
             src={movie.smallImage}
             style={{ height: "158px", width: "280px" }}
           />
-          <h5 style={{ fontSize: "24px" }}>{movie.movieName}</h5>
+          <h5 className="movie-detail-movie-name">{movie.movieName}</h5>
           <div className="movie-detail-length" style={{ gap: "10px" }}>
             <span className="small-box">R</span>
             <p>{movie.movieLength}</p>
@@ -35,15 +34,22 @@ const MovieDetailScreen = () => {
             <span className="small-box">5.1</span>
             <span className="small-box">CC</span>
           </div>
-          <div className="trailer-button cursor">
+          <div className="trailer-button cursor text-uppercase">
             <ImVideoCamera className="movie-trailer-icon" />
-            <p style={{ margin: "0px 0px" }}>TRAILER</p>
+            <p
+              style={{ margin: "0px 0px" }}
+              className="movie-detail-movie-desc"
+            >
+              TRAILER
+            </p>
           </div>
-          <p className="">{movie.description}</p>
-          <p>{movie.starring}</p>
+          <p className="movie-detail-movie-desc color-grey">
+            {movie.description}
+          </p>
+          <p className="movie-detail-movie-desc color-grey">{movie.starring}</p>
         </div>
         <div className="start-watching-now-card">
-          <div>
+          <div className="ad-free-stream">
             <ul style={{ textAlign: "left" }}>
               <li>Ad-free streaming</li>
               <li>Limited time special offer</li>
@@ -51,22 +57,26 @@ const MovieDetailScreen = () => {
           </div>
           <div className="start-watch-line"></div>
           <div>
-            <p>Starting at</p>
-            <p style={{ fontSize: "25px" }}> $2.99/mo</p>
-            <p>Cancel Anytime</p>
+            <p className="movie-detail-movie-desc">Starting at</p>
+            <p className="price-text"> $2.99/mo</p>
+            <p className="cancel-anytime">Cancel Anytime</p>
           </div>
           <div className="start-watch-part">
             <MyButton btnText={"Start watching now"} padding={"thin"} />
-            <p className="cursor">Terms of Use</p>
+            <p className="cursor terms-use">Terms of Use</p>
           </div>
         </div>
       </div>
-      <div className="cast-section">
+      <div className="cast-section movie-detail-leaving">
         <h6 style={{ fontSize: "16px", margin: "0px 0px" }}>Cast</h6>
         <div className="movie-detail-cast">
           {movie.cast.map((data, index) => {
             return (
-              <p key={index} style={{ margin: "12px 0px" }}>
+              <p
+                key={index}
+                style={{ margin: "12px 0px" }}
+                className="color-grey cast-list-text "
+              >
                 {data}
               </p>
             );
@@ -77,18 +87,21 @@ const MovieDetailScreen = () => {
         <div className="director-section">
           <span className="director-part">
             <h6 className="h6-size margin-zero">Directed By</h6>
-            <p>{movie.directedBy}</p>
+            <p className="color-grey">{movie.directedBy}</p>
           </span>
           <span className="director-part">
             <h6 className="h6-size margin-zero">Produced By</h6>
-            <p>{movie.producedBy}</p>
+            <p className="color-grey">{movie.producedBy}</p>
           </span>
           <span className="director-part">
             <h6 className="h6-size margin-zero">Written By</h6>
-            <p>{movie.writtenBy}</p>
+            <p className="color-grey">{movie.writtenBy}</p>
           </span>
         </div>
-        <div className="trailer-button cursor" style={{ display: "inline" }}>
+        <div
+          className="trailer-button cursor text-uppercase"
+          style={{ display: "inline" }}
+        >
           <p style={{ margin: "0px 0px", fontSize: "18px" }}>
             See all cast & crew
           </p>
